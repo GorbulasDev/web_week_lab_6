@@ -74,6 +74,7 @@
     let x = event.offsetX
     let y = event.offsetY  
 
+    // Begin a path and add color based on the slider selection, and render it as a circle.
     context.beginPath()
     context.fillStyle = colorInput.value
     context.arc(x, y, rangeInput.value, 0, 2 * Math.PI);

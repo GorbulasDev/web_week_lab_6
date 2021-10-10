@@ -1,6 +1,8 @@
+// Create references to our canvas.
 let canvas = document.querySelector('#bridge-chart')
 let context = canvas.getContext('2d')
 
+// Create a new Chart object and add data within it.
 let chart = new Chart(context, {
     type: 'bar',
     data: {
@@ -12,6 +14,7 @@ let chart = new Chart(context, {
         } ]
     },
 
+    // Options allows us to start at value 0 in the Chart.
     options: {
         scales: {
             yAxes: [ {
